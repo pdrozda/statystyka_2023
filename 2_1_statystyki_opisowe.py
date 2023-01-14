@@ -12,6 +12,8 @@ print("srednia wzrostu", dane_wzrostu.mean())
 print("srednia wzrostu z numpy", np.mean(dane_wzrostu))
 print("odchylenie standardowe wzrostu", dane_wzrostu.std())
 print("odchylenie standardowe wzrostu z numpy", np.std(dane_wzrostu))
+print(statistics.stdev(dane_wzrostu))
+print(statistics.pstdev(dane_wzrostu))
 
 print("Mediana wzrostu:", np.median(dane_wzrostu))
 print("Mediana Scipy:", scs.scoreatpercentile(dane_wzrostu, 100))
