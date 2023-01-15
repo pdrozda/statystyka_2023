@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 spolki = ['bos', 'pko', 'pkn', 'pzu']
 data_pocz = '20100101'
 data_kon = '20221231'
