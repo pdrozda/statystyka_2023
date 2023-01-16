@@ -83,7 +83,7 @@ print('Expected value: expected 0, actual ', scs.norm.expect(loc=0, scale=2))
 print('Kurtosis: expected 0, actual ', scs.kurtosis(norm))
 print('Skewness: expected 0, actual ', scs.skew(norm))
 
-# Zadanie 7
+# Zadanie 6
 data1 = scs.norm.rvs(size=1000, loc=1, scale=2)
 data2 = scs.norm.rvs(size=1000, loc=0, scale=1)
 data3 = scs.norm.rvs(size=1000, loc=-1, scale=0.5)
