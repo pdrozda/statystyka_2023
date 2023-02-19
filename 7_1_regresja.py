@@ -31,3 +31,18 @@ print('Prognozowana cena mieszkania Olsztyn to:', prognoza_ceny_mieszkania_olszt
 R_sq = model_regresji_mieszkania.score(x, y)
 print('Współczynnik determinacji:', R_sq)
 
+from sklearn.ensemble import RandomForestRegressor
+model_regresji_rf = RandomForestRegressor()
+model_regresji_rf.fit(x,y)
+R_sq_rf = model_regresji_rf.score(x, y)
+print('Współczynnik determinacji dla Random Forest Regresor:', R_sq_rf)
+print('Predykcja Random Forest:', model_regresji_rf.predict(x).round(1))
+print('Predykcja Liniowa:', model_regresji_mieszkania.predict(x).round(1))
+print('Wartości rzeczywiste:', y)
+
+from sklearn.svm import LinearSVR
+model_regresji_svm = LinearSVR()
+model_regresji_svm.fit(x,y)
+R_sq_svm = model_regresji_svm.score(x,y)
+print('Predykcja SVR:', model_regresji_svm.predict(x).round(1))
+print('Współczynnik determinacji SVR:', R_sq_svm)
