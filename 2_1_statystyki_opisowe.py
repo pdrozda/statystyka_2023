@@ -2,7 +2,7 @@ import numpy as np
 import scipy.stats as scs
 import statistics
 
-dane_wzrostu = np.loadtxt("files/Wzrost.csv", delimiter=',')
+dane_wzrostu = np.loadtxt("dane/Wzrost.csv", delimiter=',')
 print(dane_wzrostu)
 
 print("min wzrost", dane_wzrostu.min())

@@ -1,8 +1,8 @@
 import numpy as np
 import scipy.stats as scs
 
-dane_wzrost = np.loadtxt('files/Wzrost.csv', delimiter=',')
-dane_wzrost2 = np.loadtxt('files/Wzrost2.csv', delimiter=',')
+dane_wzrost = np.loadtxt('dane/Wzrost.csv', delimiter=',')
+dane_wzrost2 = np.loadtxt('dane/Wzrost2.csv', delimiter=',')
 
 # Test dla jednej średniej
 print('Srednia z proby:', dane_wzrost.mean())

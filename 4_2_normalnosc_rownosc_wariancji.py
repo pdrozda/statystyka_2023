@@ -1,9 +1,9 @@
 import numpy as np
 import scipy.stats as scs
 
-dane_wzrost1 = np.loadtxt('files/Wzrost.csv', delimiter=',')
-dane_wzrost2 = np.loadtxt('files/Wzrost2.csv', delimiter=',')
-dane_wzrost3 = np.loadtxt('files/Wzrost1.csv', delimiter=',')
+dane_wzrost1 = np.loadtxt('dane/Wzrost.csv', delimiter=',')
+dane_wzrost2 = np.loadtxt('dane/Wzrost2.csv', delimiter=',')
+dane_wzrost3 = np.loadtxt('dane/Wzrost1.csv', delimiter=',')
 
 # testy normalności
 normalnosc_1 = scs.normaltest(dane_wzrost1)
