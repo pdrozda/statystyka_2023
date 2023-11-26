@@ -46,6 +46,8 @@ print('Współczynnik korelacji liniowej Spearmana 8 ', wspolczynnik_spearman)
 wspolczynnik_spearman = scs.spearmanr(x9, y9)
 print('Współczynnik korelacji liniowej Spearmana 9 ', wspolczynnik_spearman)
 
+print('Hello World')
+
 
 
 
